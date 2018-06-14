@@ -1,0 +1,6 @@
+{
+    "environment": "local",
+    "routes": {
+        "creditCheck": "credit-check"
+    }
+}
