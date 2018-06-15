@@ -1,5 +1,5 @@
 export default {
   routes: {
-      creditCheck: "/credit-check"
+      creditHealth: "/credit-heath",
   }
 };

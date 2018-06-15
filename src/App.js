@@ -4,7 +4,6 @@ import RootComponent from './components/RootComponent';
 import createBrowserHistory from 'history/createBrowserHistory'
 
 const history = createBrowserHistory();
-
 class App extends Component {
   render() {
     return (
