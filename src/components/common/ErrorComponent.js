@@ -9,3 +9,5 @@ class ErrorComponent extends React.Component {
         console.log(info);
     }
 }
+
+export default ErrorComponent;
