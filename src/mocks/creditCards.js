@@ -5,18 +5,21 @@ export default {
         type: 'Cash Back Card',
         limit: 1000,
         statement: 13,
+        transactionIds: [3, 2, 1]
       },
       {
         bank: 'TD',
         type: 'Airmiles',
         limit: 3000,
         statement: 23,
+        transactionIds: [6, 5, 4]
       },
       {
         bank: 'RBC',
         type: 'Family',
         limit: 5000,
         statement: 30,
+        transactionIds: [7, 8, 9]
       }
     ],
     transactions: [

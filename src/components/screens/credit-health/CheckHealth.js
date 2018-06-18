@@ -3,7 +3,8 @@ import Proptypes from 'prop-types';
 import { Col, Row } from 'react-bootstrap';
 
 import CreditCards from '../../common/credit-cards';
-import CreditCardMocks from '../../../mocks/creditCards'
+import CreditCardMocks from '../../../mocks/creditCards';
+import Transactions from '../../common/transactions';
 
 class CreditHealth extends Component {
   static propTypes = {
@@ -17,6 +18,7 @@ class CreditHealth extends Component {
 
   state = {
     isFetching: false,
+    selectedCard: {}
   }
 
   render() {
@@ -24,10 +26,10 @@ class CreditHealth extends Component {
           <section id="credit-health">
             <Row>
               <Col lg={4} sm={3}>
-                <CreditCards creditCards={this.props.creditCards} />
+                <CreditCards  creditCards={this.props.creditCards} />
               </Col>
               <Col lg={8} sm={9}>
-                list of expenses
+                <Transactions card={this.state.selectedCard} transactions={this.props.transactions} />
               </Col>
             </Row>
           </section>
