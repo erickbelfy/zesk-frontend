@@ -1,0 +1,9 @@
+.card {
+  background: grey;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+
+  &:hover {
+    background: lightblue;
+  }
+}
